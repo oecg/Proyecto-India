@@ -1,7 +1,5 @@
 # Proyecto India
 
-La sigiente descripción es la original del trabajo.
-
 # <center> Clasificación de Péptidos Antimicrobianos
 **Universidad Nacional de Colombia**
   
@@ -14,3 +12,20 @@ Si bien la identificación de péptidos antimicrobianos se ha desarrollado de ma
 Lo anterior, ha motivado a que los grupos de investigación en Biología Funcional e Investigación y Desarrollo en Inteligencia Artificial (GIDIA), ambos de Universidad Nacional, sede Medellín, y el grupo de investigación en Automática Electrónica y Ciencias Computacionales (AEyCC) del ITM, unan sus esfuerzos en la búsqueda y construcción de soluciones computacionales que apoyen la investigación y desarrollo de nuevas moléculas antimicrobianas.
 
 Como resultado parcial se ha recopilado, de las diferentes bases de datos de péptidos disponibles, péptidos que se han identificado que pertenecen a una de dos clases: antimicrobianos y NO-antimicrobianos. Para dicho conjunto de péptidos se ha calculado aproximadamente 1700 descriptores a partir de propiedades como la carga eléctrica, la hidrofobicidad, el momento hidrofóbico, el punto isoeléctrico, la estructura primaria y otras características fisicoquímicas de los péptidos.
+
+# Resultados y conclusiones
+
+Figura 1: Grafico de Barras no antimicrobianos (0) y antimicrobianos (1)
+
+![alt text](https://github.com/oecorrechag/Proyecto-India/blob/master/plot.png)
+
+Se Ajustaron 3 modelos, un Bosque Aleatorio, una Red Neuronal y una Regresión Logística. Se calificaron con las métricas de f1_score, accuracy, precision_score, recall_score y matriz de confusión, dándole más relevancia a esta última.
+
+Figura 2: Matriz de Confusión del ajuste de la red neuronal.
+
+![alt text](https://github.com/oecorrechag/Proyecto-India/blob/master/matriz.png)
+
+Al ajustar los modelos se obtuvieron resultados similares, con pocas diferencias, sin embargo, la diferencia notoria es el tiempo de ejecución, ya que mientras los tiempos de ejecución del Bosque Aleatorio y la Regresión Logística son mucho menores que los de la Red Neuronal. Se recomendaría un modelo más simple como la Regresión Logística por su consistencia en las métricas numéricas y podria mejorarse con un experto en el tema, sin embargo, si se cuenta con más recursos computacionales y más observaciones se podría usar la Red Neuronal.
+
+### Bibliografia
+• Cournapeau, D., (2007), scikit-learn. Recuperado de: https://scikit-learn.org
